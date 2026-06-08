@@ -6,11 +6,11 @@ from langchain_openai import ChatOpenAI
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_pinecone import PineconeVectorStore
 
-load_dotenv()
+# load_dotenv()
 
-PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
-PINECONE_INDEX_NAME = os.getenv("PINECONE_INDEX_NAME")
-OPENROUTER_API_KEY=os.getenv("OPENROUTER_API_KEY")
+PINECONE_API_KEY = st.secrets["PINECONE_API_KEY"]
+PINECONE_INDEX_NAME = st.secrets["PINECONE_INDEX_NAME"]
+OPENROUTER_API_KEY=st.secrets["OPENROUTER_API_KEY"]
 embeddings = HuggingFaceEmbeddings(
     model_name="BAAI/bge-small-en-v1.5"
 )
