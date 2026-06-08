@@ -61,7 +61,7 @@ Question:{question}
 
 st.set_page_config(
     page_title="Simelabs Chatbot assistant",
-    page_icon=r"C:\Users\vishn\data science\Simelabs\5-06-26\simelabs-logo.png",
+    page_icon="simelabs-logo.png",
     layout="wide"
 )
 st.logo("simelabs-logo.png")
